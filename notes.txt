@@ -1,0 +1,21 @@
+
+Problems
+    - code duplication
+    - closed for extension
+    - reusability, maintainability
+
+Improvements
+    - isolate change
+    - separate different levels of abstraction
+    - open for extension
+    - higher level abstractions do not depend on lower level
+    - stability
+
+
+Notes
+    - abstract common behaviour
+    - no hardcoded lists in function
+    - commit to a specific impl alap
+    - open to add more configs but closed for modification
+    - tuple for errors
+    - functional style
