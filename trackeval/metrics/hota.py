@@ -80,6 +80,10 @@ class HOTA(_BaseMetric):
                 continue
 
             # Get matching scores between pairs of dets for optimizing HOTA
+
+            # print("\n\nSHAPE OF THE SIM SCORES: ")
+            # print(np.array(data['similarity_scores']).shape)
+
             similarity = data['similarity_scores'][t]
             score_mat = global_alignment_score[gt_ids_t[:, np.newaxis], tracker_ids_t[np.newaxis, :]] * similarity
 
